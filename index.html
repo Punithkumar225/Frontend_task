@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Task</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=Open+Sans&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="logo">
+        <img class="logo_pic" src="Images/logo.png" width="35px" height="38px" style="padding-top: 9px; padding-bottom: 5px; padding-left: 5px;">
+        <h2 style="font-family: calibri; font-size: 20px;"  class="Name">UI World</h2>
+<!-- HTML for the top navigation bar -->
+<ul style="padding-top: 8px;"  class="navbar">
+  <li><a href="#home" bo>Home</a></li>
+  <li class="dropdown">
+    <a href="#products">Products</a>
+    <div class="dropdown-content">
+      <a href="#product1">Product 1</a>
+      <a href="#product2">Product 2</a>
+      <a href="#product3">Product 3</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#resources">Resources</a>
+    <div class="dropdown-content">
+      <a href="#resource1">Resource 1</a>
+      <a href="#resource2">Resource 2</a>
+      <a href="#resource3">Resource 3</a>
+    </div>
+  </li>
+  <li><a href="#pricing">Pricing</a></li>
+</ul>
+  <style>
+    /* CSS for the top navigation bar */
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    ul.navbar li {
+      float: left;
+    }
+
+    ul.navbar li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.navbar li a:hover {
+      background-color: #ddd;
+    }
+
+    ul.navbar li.dropdown {
+      display: inline-block;
+    }
+
+    ul.navbar .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    ul.navbar .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    ul.navbar .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    ul.navbar .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+
+
+
+</div>
+  <div class="container">
+      <div class="Walpaper_section">
+          <img class="Walpaper"  src="Images/Walpaper.jpg" width=300px height="350px" alt="Web image">
+      </div>
+    <div class="form_section">
+    <h1>Let's Level up your brand, together</h1>
+      <div class="contact-mail">
+        <p>You can reach us anytime via hi@uiworld.com</p>
+      </div>
+    <form id="myForm" action="http://formz.in/api/task" method="post">
+      <label for="name">Name:</label>
+      <input type="String" id="name" name="name"  required="Yes">
+
+      <label for="email">Email:</label>
+      <input type="String" id="email" name="email" required="Yes">
+
+      <label for="phone">Phone Number:</label>
+      <input type="String" id="phone" name="phone"  required="Yes">
+
+      <label for="message">How Can We Help?:</label>
+      <textarea id="help" name="message" rows="7" required="Yes"></textarea>
+      <label for="services">Services:</label>
+      <div id="services" type="String">
+              </form id="service">
+                  <form>
+                    <label>
+                        <input type="checkbox">
+                        Web Design
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        UX Design
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Content Creation
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Strategy & Consulting
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Other
+                    </label>
+                  </form>
+              </form>
+      </div>
+      <button type="submit" id="submitButton" onclick="handleSubmit();">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="bottom-section">
+
+    <div class="bottom-logo">
+      <img class="logo_pic" src="Images/logo.png" width="50px" height="55px" style="padding-top: 9px; padding-bottom: 0px; padding-left: 5px;">
+        <div>
+          <h1 class="logo_Name" style=" padding-left:-3px; font-family: calibri;">UI World</h1>
+          <p style="font-family:calibri; font-size: medium;">The platform to scale your Brand</p>
+        </div>
+    </div>
+<!-- HTML for the down navigation bars -->
+  <div class="navbar">
+    <div class="navbar-item">
+      <a style="font-family: Georgia, 'Times New Roman', Times, serif; color:black;" href="#product"><b>Product</b></a>
+    </div>
+    <div class="navbar-item">
+      <a style="font-family: Georgia, 'Times New Roman', Times, serif; color:black;" href="#company"><b>Company</b></a>
+    </div>
+    <div class="navbar-item">
+      <a style="font-family: Georgia, 'Times New Roman', Times, serif; color:black;" href="#Social"><b>Social</b></a>
+    </div>
+    <div class="navbar-item">
+      <a style="font-family: Georgia, 'Times New Roman', Times, serif; color:black;" href="#Legal"><b>Legal</b></a>
+    </div>
+      <div class="navbar-item">
+        <a href="#Overview">Overview</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#about us">About us</a>
+      </div>
+      <div class="navbar-item">
+        <a href="https://twitter.com/i/flow/login">Twitter</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#Terms">Terms</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#features">Features</a>
+      </div>
+      <div class="navbar-item">
+        <a href="careers">Careers</a>
+      </div>
+      <div class="navbar-item">
+        <a href="https://www.linkedin.com/login">LinkedIn</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#privacy">Privacy</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#Pricing">Pricing</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#News">News</a>
+      </div>
+      <div class="navbar-item">
+        <a href="https://www.facebook.com/login/">Facebook</a>
+      </div>
+      <div class="navbar-item">
+        <a href="#cookies">Cookies</a>
+      </div>
+    <style>
+      /* CSS for the down navigation bars */
+      .navbar {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+      .navbar-item {
+        flex: 1 0 20%;
+        padding: 5px;
+        text-align: center;
+      }
+    
+      .navbar-item a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+      }
+    
+      .navbar-item a:hover {
+        background-color: #ccc;
+      }
+    </style>
+  </div>
+</div>
+<div class="copyright">
+  <P style="padding-left: 35%; padding-right: 35%;">©2023 All rights reserved | UI world</P>
+</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
